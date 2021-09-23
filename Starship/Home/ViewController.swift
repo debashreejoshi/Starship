@@ -4,7 +4,7 @@
 //
 //  Created by Debashree on 23/9/21.
 //
-
+// theme color :::: #4F6395
 import UIKit
 
 class ViewController: UIViewController {
@@ -30,6 +30,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let signUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        self.navigationController?.pushViewController(signUpVC, animated: true)
         
     }
     
