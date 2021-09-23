@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C85129EE26FC7EFA009A9AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */; };
+		C85129F026FC7EFA009A9AEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */; };
+		C85129F226FC7EFA009A9AEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85129F126FC7EFA009A9AEA /* ViewController.swift */; };
+		C85129F526FC7EFA009A9AEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85129F326FC7EFA009A9AEA /* Main.storyboard */; };
+		C85129F726FC7EFE009A9AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85129F626FC7EFE009A9AEA /* Assets.xcassets */; };
+		C85129FA26FC7EFE009A9AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85129F826FC7EFE009A9AEA /* LaunchScreen.storyboard */; };
+		C8512A0526FC7EFF009A9AEA /* StarshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A0426FC7EFF009A9AEA /* StarshipTests.swift */; };
+		C8512A1026FC7EFF009A9AEA /* StarshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A0F26FC7EFF009A9AEA /* StarshipUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8512A0126FC7EFF009A9AEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C85129E226FC7EFA009A9AEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C85129E926FC7EFA009A9AEA;
+			remoteInfo = Starship;
+		};
+		C8512A0C26FC7EFF009A9AEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C85129E226FC7EFA009A9AEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C85129E926FC7EFA009A9AEA;
+			remoteInfo = Starship;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C85129EA26FC7EFA009A9AEA /* Starship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starship.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C85129F126FC7EFA009A9AEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C85129F426FC7EFA009A9AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C85129F626FC7EFE009A9AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C85129F926FC7EFE009A9AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C85129FB26FC7EFE009A9AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8512A0026FC7EFF009A9AEA /* StarshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8512A0426FC7EFF009A9AEA /* StarshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipTests.swift; sourceTree = "<group>"; };
+		C8512A0626FC7EFF009A9AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8512A0B26FC7EFF009A9AEA /* StarshipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarshipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8512A0F26FC7EFF009A9AEA /* StarshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipUITests.swift; sourceTree = "<group>"; };
+		C8512A1126FC7EFF009A9AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C85129E726FC7EFA009A9AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85129FD26FC7EFF009A9AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8512A0826FC7EFF009A9AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C85129E126FC7EFA009A9AEA = {
+			isa = PBXGroup;
+			children = (
+				C85129EC26FC7EFA009A9AEA /* Starship */,
+				C8512A0326FC7EFF009A9AEA /* StarshipTests */,
+				C8512A0E26FC7EFF009A9AEA /* StarshipUITests */,
+				C85129EB26FC7EFA009A9AEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C85129EB26FC7EFA009A9AEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C85129EA26FC7EFA009A9AEA /* Starship.app */,
+				C8512A0026FC7EFF009A9AEA /* StarshipTests.xctest */,
+				C8512A0B26FC7EFF009A9AEA /* StarshipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C85129EC26FC7EFA009A9AEA /* Starship */ = {
+			isa = PBXGroup;
+			children = (
+				C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */,
+				C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */,
+				C85129F126FC7EFA009A9AEA /* ViewController.swift */,
+				C85129F326FC7EFA009A9AEA /* Main.storyboard */,
+				C85129F626FC7EFE009A9AEA /* Assets.xcassets */,
+				C85129F826FC7EFE009A9AEA /* LaunchScreen.storyboard */,
+				C85129FB26FC7EFE009A9AEA /* Info.plist */,
+			);
+			path = Starship;
+			sourceTree = "<group>";
+		};
+		C8512A0326FC7EFF009A9AEA /* StarshipTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8512A0426FC7EFF009A9AEA /* StarshipTests.swift */,
+				C8512A0626FC7EFF009A9AEA /* Info.plist */,
+			);
+			path = StarshipTests;
+			sourceTree = "<group>";
+		};
+		C8512A0E26FC7EFF009A9AEA /* StarshipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8512A0F26FC7EFF009A9AEA /* StarshipUITests.swift */,
+				C8512A1126FC7EFF009A9AEA /* Info.plist */,
+			);
+			path = StarshipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C85129E926FC7EFA009A9AEA /* Starship */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8512A1426FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "Starship" */;
+			buildPhases = (
+				C85129E626FC7EFA009A9AEA /* Sources */,
+				C85129E726FC7EFA009A9AEA /* Frameworks */,
+				C85129E826FC7EFA009A9AEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starship;
+			productName = Starship;
+			productReference = C85129EA26FC7EFA009A9AEA /* Starship.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C85129FF26FC7EFF009A9AEA /* StarshipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8512A1726FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "StarshipTests" */;
+			buildPhases = (
+				C85129FC26FC7EFF009A9AEA /* Sources */,
+				C85129FD26FC7EFF009A9AEA /* Frameworks */,
+				C85129FE26FC7EFF009A9AEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8512A0226FC7EFF009A9AEA /* PBXTargetDependency */,
+			);
+			name = StarshipTests;
+			productName = StarshipTests;
+			productReference = C8512A0026FC7EFF009A9AEA /* StarshipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8512A0A26FC7EFF009A9AEA /* StarshipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8512A1A26FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "StarshipUITests" */;
+			buildPhases = (
+				C8512A0726FC7EFF009A9AEA /* Sources */,
+				C8512A0826FC7EFF009A9AEA /* Frameworks */,
+				C8512A0926FC7EFF009A9AEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8512A0D26FC7EFF009A9AEA /* PBXTargetDependency */,
+			);
+			name = StarshipUITests;
+			productName = StarshipUITests;
+			productReference = C8512A0B26FC7EFF009A9AEA /* StarshipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C85129E226FC7EFA009A9AEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C85129E926FC7EFA009A9AEA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C85129FF26FC7EFF009A9AEA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C85129E926FC7EFA009A9AEA;
+					};
+					C8512A0A26FC7EFF009A9AEA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C85129E926FC7EFA009A9AEA;
+					};
+				};
+			};
+			buildConfigurationList = C85129E526FC7EFA009A9AEA /* Build configuration list for PBXProject "Starship" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C85129E126FC7EFA009A9AEA;
+			productRefGroup = C85129EB26FC7EFA009A9AEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C85129E926FC7EFA009A9AEA /* Starship */,
+				C85129FF26FC7EFF009A9AEA /* StarshipTests */,
+				C8512A0A26FC7EFF009A9AEA /* StarshipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C85129E826FC7EFA009A9AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85129FA26FC7EFE009A9AEA /* LaunchScreen.storyboard in Resources */,
+				C85129F726FC7EFE009A9AEA /* Assets.xcassets in Resources */,
+				C85129F526FC7EFA009A9AEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85129FE26FC7EFF009A9AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8512A0926FC7EFF009A9AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C85129E626FC7EFA009A9AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85129F226FC7EFA009A9AEA /* ViewController.swift in Sources */,
+				C85129EE26FC7EFA009A9AEA /* AppDelegate.swift in Sources */,
+				C85129F026FC7EFA009A9AEA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C85129FC26FC7EFF009A9AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8512A0526FC7EFF009A9AEA /* StarshipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8512A0726FC7EFF009A9AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8512A1026FC7EFF009A9AEA /* StarshipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8512A0226FC7EFF009A9AEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C85129E926FC7EFA009A9AEA /* Starship */;
+			targetProxy = C8512A0126FC7EFF009A9AEA /* PBXContainerItemProxy */;
+		};
+		C8512A0D26FC7EFF009A9AEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C85129E926FC7EFA009A9AEA /* Starship */;
+			targetProxy = C8512A0C26FC7EFF009A9AEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C85129F326FC7EFA009A9AEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85129F426FC7EFA009A9AEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C85129F826FC7EFE009A9AEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C85129F926FC7EFE009A9AEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8512A1226FC7EFF009A9AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8512A1326FC7EFF009A9AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8512A1526FC7EFF009A9AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Starship/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debashree.Starship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8512A1626FC7EFF009A9AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Starship/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debashree.Starship;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8512A1826FC7EFF009A9AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarshipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debashree.StarshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starship.app/Starship";
+			};
+			name = Debug;
+		};
+		C8512A1926FC7EFF009A9AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarshipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debashree.StarshipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starship.app/Starship";
+			};
+			name = Release;
+		};
+		C8512A1B26FC7EFF009A9AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarshipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debashree.StarshipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Starship;
+			};
+			name = Debug;
+		};
+		C8512A1C26FC7EFF009A9AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarshipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debashree.StarshipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Starship;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C85129E526FC7EFA009A9AEA /* Build configuration list for PBXProject "Starship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8512A1226FC7EFF009A9AEA /* Debug */,
+				C8512A1326FC7EFF009A9AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8512A1426FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "Starship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8512A1526FC7EFF009A9AEA /* Debug */,
+				C8512A1626FC7EFF009A9AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8512A1726FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "StarshipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8512A1826FC7EFF009A9AEA /* Debug */,
+				C8512A1926FC7EFF009A9AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8512A1A26FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "StarshipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8512A1B26FC7EFF009A9AEA /* Debug */,
+				C8512A1C26FC7EFF009A9AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C85129E226FC7EFA009A9AEA /* Project object */;
+}
