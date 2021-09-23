@@ -15,6 +15,8 @@
 		C85129FA26FC7EFE009A9AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85129F826FC7EFE009A9AEA /* LaunchScreen.storyboard */; };
 		C8512A0526FC7EFF009A9AEA /* StarshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A0426FC7EFF009A9AEA /* StarshipTests.swift */; };
 		C8512A1026FC7EFF009A9AEA /* StarshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A0F26FC7EFF009A9AEA /* StarshipUITests.swift */; };
+		C8512A1E26FC8FC6009A9AEA /* StarshipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A1D26FC8FC5009A9AEA /* StarshipCell.swift */; };
+		C8512A2026FC9091009A9AEA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A1F26FC9091009A9AEA /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C8512A0B26FC7EFF009A9AEA /* StarshipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarshipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8512A0F26FC7EFF009A9AEA /* StarshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipUITests.swift; sourceTree = "<group>"; };
 		C8512A1126FC7EFF009A9AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8512A1D26FC8FC5009A9AEA /* StarshipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipCell.swift; sourceTree = "<group>"; };
+		C8512A1F26FC9091009A9AEA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 				C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */,
 				C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */,
 				C85129F126FC7EFA009A9AEA /* ViewController.swift */,
+				C8512A1D26FC8FC5009A9AEA /* StarshipCell.swift */,
 				C85129F326FC7EFA009A9AEA /* Main.storyboard */,
+				C8512A1F26FC9091009A9AEA /* DetailViewController.swift */,
 				C85129F626FC7EFE009A9AEA /* Assets.xcassets */,
 				C85129F826FC7EFE009A9AEA /* LaunchScreen.storyboard */,
 				C85129FB26FC7EFE009A9AEA /* Info.plist */,
@@ -260,7 +266,9 @@
 			files = (
 				C85129F226FC7EFA009A9AEA /* ViewController.swift in Sources */,
 				C85129EE26FC7EFA009A9AEA /* AppDelegate.swift in Sources */,
+				C8512A2026FC9091009A9AEA /* DetailViewController.swift in Sources */,
 				C85129F026FC7EFA009A9AEA /* SceneDelegate.swift in Sources */,
+				C8512A1E26FC8FC6009A9AEA /* StarshipCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
