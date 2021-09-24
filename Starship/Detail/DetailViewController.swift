@@ -31,13 +31,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = starship?.name ?? "Detail"
         self.setUpValues()
-        self.uiConfig()
     }
     
-    func uiConfig() {
-        self.outerView.set(cornerRadius: 20)
-        self.outerView.setCardView()
-    }
+    
     func setUpValues() {
         self.lblName.text = starship?.name
         self.lblModel.text = starship?.model
