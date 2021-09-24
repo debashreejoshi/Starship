@@ -19,11 +19,11 @@ class TabViewController: UITabBarController {
     func tabBarSetUp() {
         let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController") as! ViewController
         let homeNavController = UINavigationController(rootViewController: homeVC)
-        homeNavController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "homeUnselectedIcon"), selectedImage: UIImage(named: "homeSelectedIcon"))
+        homeNavController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         
         let favouritesVC = UIStoryboard(name: "Favourite", bundle: nil).instantiateViewController(identifier: "FavouritesViewController") as! FavouritesViewController
         let favouritesNavController = UINavigationController(rootViewController: favouritesVC)
-        favouritesNavController.tabBarItem = UITabBarItem(title: "Favourites", image: UIImage(named: "favouriteBorderIcon"), selectedImage: UIImage(named: "favouriteIcon"))
+        favouritesNavController.tabBarItem = UITabBarItem(title: "Favourites", image: UIImage(systemName: "heart"), selectedImage: UIImage(systemName: "heart.fill"))
         
         let viewControllersList = [homeNavController, favouritesNavController]
         self.viewControllers = viewControllersList
