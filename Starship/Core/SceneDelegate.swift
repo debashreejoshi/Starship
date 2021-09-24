@@ -18,12 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
                 //self.window =  UIWindow(frame: UIScreen.main.bounds)
 
-                guard let rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController") as? ViewController else {
-                    print("ViewController not found")
-                    return
-                }
-                let rootNC = UINavigationController(rootViewController: rootVC)
-                self.window?.rootViewController = rootNC
+                let tabBarController = TabViewController()
+    
+                self.window?.rootViewController = tabBarController
                 self.window?.makeKeyAndVisible()
     }
 

@@ -8,31 +8,64 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    let apiFeed = APIFeed()
+    var starshipsList = [StarshipsList]()
+    {
+        didSet{
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "Home"
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.getStarships()
+    }
+    
+    func getStarships() {
+        apiFeed.requestAPIInfo { result in
+          //  print("The response is :::::::\(result)")
+            switch result {
+            case.success(let data):
+                if let starshipmodel = data.results {
+                    self.starshipsList = starshipmodel
+                }
+               // self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return starshipsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableView = tableView.dequeueReusableCell(withIdentifier: "StarshipCell", for: indexPath) as! StarshipCell
-        return tableView
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StarshipCell", for: indexPath) as! StarshipCell
+        cell.starship = self.starshipsList[indexPath.row]
+        return cell
     }
     
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let signUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-        self.navigationController?.pushViewController(signUpVC, animated: true)
-        
+    func tableView(_ tableView: UITableView,   indexPath: IndexPath) {
+        let detailVC = UIStoryboard(name: "Detail", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        detailVC.starship = self.starshipsList[indexPath.row]
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
 }

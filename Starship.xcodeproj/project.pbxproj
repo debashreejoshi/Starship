@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		713EA5AC94ECAE0270B19081 /* Pods_Starship_StarshipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ECE52CADADAD7CD2A78E14 /* Pods_Starship_StarshipUITests.framework */; };
+		A169C871DE4A114859B5CFC6 /* Pods_StarshipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158281467E97A405C0F3DE59 /* Pods_StarshipTests.framework */; };
 		C85129EE26FC7EFA009A9AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */; };
 		C85129F026FC7EFA009A9AEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */; };
 		C85129F226FC7EFA009A9AEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85129F126FC7EFA009A9AEA /* ViewController.swift */; };
@@ -17,6 +19,15 @@
 		C8512A1026FC7EFF009A9AEA /* StarshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A0F26FC7EFF009A9AEA /* StarshipUITests.swift */; };
 		C8512A1E26FC8FC6009A9AEA /* StarshipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A1D26FC8FC5009A9AEA /* StarshipCell.swift */; };
 		C8512A2026FC9091009A9AEA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A1F26FC9091009A9AEA /* DetailViewController.swift */; };
+		C8512A2326FCB5F1009A9AEA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8512A2226FCB5F0009A9AEA /* UIColor+Extensions.swift */; };
+		C8FE420626FCBDD40019A7E3 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FE420526FCBDD40019A7E3 /* Detail.storyboard */; };
+		C8FE420B26FCC6280019A7E3 /* StarshipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE420A26FCC6280019A7E3 /* StarshipsModel.swift */; };
+		C8FE420D26FD524A0019A7E3 /* APIFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE420C26FD52490019A7E3 /* APIFeed.swift */; };
+		C8FE420F26FD75430019A7E3 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE420E26FD75430019A7E3 /* TabViewController.swift */; };
+		C8FE421226FD77D20019A7E3 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE421126FD77D20019A7E3 /* FavouritesViewController.swift */; };
+		C8FE421426FD77EC0019A7E3 /* Favourite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FE421326FD77EC0019A7E3 /* Favourite.storyboard */; };
+		C8FE421626FD97E20019A7E3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE421526FD97E10019A7E3 /* UIView+Extensions.swift */; };
+		D9B162A02EDB8D6156F12852 /* Pods_Starship.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86CA6C4172D51A323818B46 /* Pods_Starship.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04ECE52CADADAD7CD2A78E14 /* Pods_Starship_StarshipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starship_StarshipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08224E6414C3F40C8DAB7065 /* Pods-Starship.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starship.debug.xcconfig"; path = "Target Support Files/Pods-Starship/Pods-Starship.debug.xcconfig"; sourceTree = "<group>"; };
+		0ABEA1A6643B5310BE9CF9D8 /* Pods-StarshipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarshipTests.release.xcconfig"; path = "Target Support Files/Pods-StarshipTests/Pods-StarshipTests.release.xcconfig"; sourceTree = "<group>"; };
+		158281467E97A405C0F3DE59 /* Pods_StarshipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarshipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA54E8A6149F4795F35ED30 /* Pods-StarshipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarshipTests.debug.xcconfig"; path = "Target Support Files/Pods-StarshipTests/Pods-StarshipTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D845528C23048E438B06B9C /* Pods-Starship-StarshipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starship-StarshipUITests.release.xcconfig"; path = "Target Support Files/Pods-Starship-StarshipUITests/Pods-Starship-StarshipUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B86CA6C4172D51A323818B46 /* Pods_Starship.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starship.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4284F8C8561A872A3222B4E /* Pods-Starship.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starship.release.xcconfig"; path = "Target Support Files/Pods-Starship/Pods-Starship.release.xcconfig"; sourceTree = "<group>"; };
 		C85129EA26FC7EFA009A9AEA /* Starship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +72,15 @@
 		C8512A1126FC7EFF009A9AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8512A1D26FC8FC5009A9AEA /* StarshipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipCell.swift; sourceTree = "<group>"; };
 		C8512A1F26FC9091009A9AEA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C8512A2226FCB5F0009A9AEA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		C8FE420526FCBDD40019A7E3 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		C8FE420A26FCC6280019A7E3 /* StarshipsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsModel.swift; sourceTree = "<group>"; };
+		C8FE420C26FD52490019A7E3 /* APIFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFeed.swift; sourceTree = "<group>"; };
+		C8FE420E26FD75430019A7E3 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		C8FE421126FD77D20019A7E3 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		C8FE421326FD77EC0019A7E3 /* Favourite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favourite.storyboard; sourceTree = "<group>"; };
+		C8FE421526FD97E10019A7E3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F54F98E4A82F0E2F0CF04B33 /* Pods-Starship-StarshipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starship-StarshipUITests.debug.xcconfig"; path = "Target Support Files/Pods-Starship-StarshipUITests/Pods-Starship-StarshipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B162A02EDB8D6156F12852 /* Pods_Starship.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A169C871DE4A114859B5CFC6 /* Pods_StarshipTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713EA5AC94ECAE0270B19081 /* Pods_Starship_StarshipUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F79990020DD4BBF76E8BCBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B86CA6C4172D51A323818B46 /* Pods_Starship.framework */,
+				04ECE52CADADAD7CD2A78E14 /* Pods_Starship_StarshipUITests.framework */,
+				158281467E97A405C0F3DE59 /* Pods_StarshipTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C85129E126FC7EFA009A9AEA = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +128,8 @@
 				C8512A0326FC7EFF009A9AEA /* StarshipTests */,
 				C8512A0E26FC7EFF009A9AEA /* StarshipUITests */,
 				C85129EB26FC7EFA009A9AEA /* Products */,
+				D2C6F194EBB4072B89C8500E /* Pods */,
+				1F79990020DD4BBF76E8BCBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +146,14 @@
 		C85129EC26FC7EFA009A9AEA /* Starship */ = {
 			isa = PBXGroup;
 			children = (
-				C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */,
-				C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */,
-				C85129F126FC7EFA009A9AEA /* ViewController.swift */,
-				C8512A1D26FC8FC5009A9AEA /* StarshipCell.swift */,
-				C85129F326FC7EFA009A9AEA /* Main.storyboard */,
-				C8512A1F26FC9091009A9AEA /* DetailViewController.swift */,
-				C85129F626FC7EFE009A9AEA /* Assets.xcassets */,
-				C85129F826FC7EFE009A9AEA /* LaunchScreen.storyboard */,
 				C85129FB26FC7EFE009A9AEA /* Info.plist */,
+				C8FE420726FCBDE50019A7E3 /* Core */,
+				C8512A2126FCB5A6009A9AEA /* Extensions */,
+				C8FE420826FCBE290019A7E3 /* Home */,
+				C8FE420926FCBE4C0019A7E3 /* Detail */,
+				C8FE421026FD77AA0019A7E3 /* Favourites */,
+				C8FE420A26FCC6280019A7E3 /* StarshipsModel.swift */,
+				C8FE420C26FD52490019A7E3 /* APIFeed.swift */,
 			);
 			path = Starship;
 			sourceTree = "<group>";
@@ -134,6 +176,68 @@
 			path = StarshipUITests;
 			sourceTree = "<group>";
 		};
+		C8512A2126FCB5A6009A9AEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C8512A2226FCB5F0009A9AEA /* UIColor+Extensions.swift */,
+				C8FE421526FD97E10019A7E3 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8FE420726FCBDE50019A7E3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C85129ED26FC7EFA009A9AEA /* AppDelegate.swift */,
+				C85129EF26FC7EFA009A9AEA /* SceneDelegate.swift */,
+				C8FE420E26FD75430019A7E3 /* TabViewController.swift */,
+				C85129F826FC7EFE009A9AEA /* LaunchScreen.storyboard */,
+				C85129F626FC7EFE009A9AEA /* Assets.xcassets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C8FE420826FCBE290019A7E3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C85129F326FC7EFA009A9AEA /* Main.storyboard */,
+				C85129F126FC7EFA009A9AEA /* ViewController.swift */,
+				C8512A1D26FC8FC5009A9AEA /* StarshipCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C8FE420926FCBE4C0019A7E3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C8FE420526FCBDD40019A7E3 /* Detail.storyboard */,
+				C8512A1F26FC9091009A9AEA /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C8FE421026FD77AA0019A7E3 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				C8FE421126FD77D20019A7E3 /* FavouritesViewController.swift */,
+				C8FE421326FD77EC0019A7E3 /* Favourite.storyboard */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		D2C6F194EBB4072B89C8500E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08224E6414C3F40C8DAB7065 /* Pods-Starship.debug.xcconfig */,
+				C4284F8C8561A872A3222B4E /* Pods-Starship.release.xcconfig */,
+				F54F98E4A82F0E2F0CF04B33 /* Pods-Starship-StarshipUITests.debug.xcconfig */,
+				4D845528C23048E438B06B9C /* Pods-Starship-StarshipUITests.release.xcconfig */,
+				3DA54E8A6149F4795F35ED30 /* Pods-StarshipTests.debug.xcconfig */,
+				0ABEA1A6643B5310BE9CF9D8 /* Pods-StarshipTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8512A1426FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "Starship" */;
 			buildPhases = (
+				0E748E9309B8CE1D8F0ACC7D /* [CP] Check Pods Manifest.lock */,
 				C85129E626FC7EFA009A9AEA /* Sources */,
 				C85129E726FC7EFA009A9AEA /* Frameworks */,
 				C85129E826FC7EFA009A9AEA /* Resources */,
+				EDF17676EC8E0DD39DBB2C7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8512A1726FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "StarshipTests" */;
 			buildPhases = (
+				577EF3EE3FFB5E68A6FC6639 /* [CP] Check Pods Manifest.lock */,
 				C85129FC26FC7EFF009A9AEA /* Sources */,
 				C85129FD26FC7EFF009A9AEA /* Frameworks */,
 				C85129FE26FC7EFF009A9AEA /* Resources */,
@@ -176,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8512A1A26FC7EFF009A9AEA /* Build configuration list for PBXNativeTarget "StarshipUITests" */;
 			buildPhases = (
+				5A31EB19CE27364B15271D4A /* [CP] Check Pods Manifest.lock */,
 				C8512A0726FC7EFF009A9AEA /* Sources */,
 				C8512A0826FC7EFF009A9AEA /* Frameworks */,
 				C8512A0926FC7EFF009A9AEA /* Resources */,
+				22F33E649625ECEDD95AD403 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +349,8 @@
 				C85129FA26FC7EFE009A9AEA /* LaunchScreen.storyboard in Resources */,
 				C85129F726FC7EFE009A9AEA /* Assets.xcassets in Resources */,
 				C85129F526FC7EFA009A9AEA /* Main.storyboard in Resources */,
+				C8FE421426FD77EC0019A7E3 /* Favourite.storyboard in Resources */,
+				C8FE420626FCBDD40019A7E3 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,16 +370,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E748E9309B8CE1D8F0ACC7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Starship-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22F33E649625ECEDD95AD403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starship-StarshipUITests/Pods-Starship-StarshipUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starship-StarshipUITests/Pods-Starship-StarshipUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starship-StarshipUITests/Pods-Starship-StarshipUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		577EF3EE3FFB5E68A6FC6639 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarshipTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A31EB19CE27364B15271D4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Starship-StarshipUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF17676EC8E0DD39DBB2C7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starship/Pods-Starship-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Starship/Pods-Starship-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Starship/Pods-Starship-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C85129E626FC7EFA009A9AEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C85129F226FC7EFA009A9AEA /* ViewController.swift in Sources */,
+				C8FE420B26FCC6280019A7E3 /* StarshipsModel.swift in Sources */,
+				C8512A2326FCB5F1009A9AEA /* UIColor+Extensions.swift in Sources */,
 				C85129EE26FC7EFA009A9AEA /* AppDelegate.swift in Sources */,
 				C8512A2026FC9091009A9AEA /* DetailViewController.swift in Sources */,
 				C85129F026FC7EFA009A9AEA /* SceneDelegate.swift in Sources */,
+				C8FE420F26FD75430019A7E3 /* TabViewController.swift in Sources */,
+				C8FE420D26FD524A0019A7E3 /* APIFeed.swift in Sources */,
+				C8FE421226FD77D20019A7E3 /* FavouritesViewController.swift in Sources */,
 				C8512A1E26FC8FC6009A9AEA /* StarshipCell.swift in Sources */,
+				C8FE421626FD97E20019A7E3 /* UIView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +661,7 @@
 		};
 		C8512A1526FC7EFF009A9AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08224E6414C3F40C8DAB7065 /* Pods-Starship.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +680,7 @@
 		};
 		C8512A1626FC7EFF009A9AEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4284F8C8561A872A3222B4E /* Pods-Starship.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +699,7 @@
 		};
 		C8512A1826FC7EFF009A9AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA54E8A6149F4795F35ED30 /* Pods-StarshipTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +721,7 @@
 		};
 		C8512A1926FC7EFF009A9AEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABEA1A6643B5310BE9CF9D8 /* Pods-StarshipTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +743,7 @@
 		};
 		C8512A1B26FC7EFF009A9AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54F98E4A82F0E2F0CF04B33 /* Pods-Starship-StarshipUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +763,7 @@
 		};
 		C8512A1C26FC7EFF009A9AEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D845528C23048E438B06B9C /* Pods-Starship-StarshipUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

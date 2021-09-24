@@ -11,9 +11,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.setUpNav()
+        self.setUpTabBarAppearance()
         return true
     }
     
@@ -35,11 +35,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
+        
+        // To apply textAttributes to title i.e. colour, font etc.
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
         navBarAppearance.backgroundColor = UIColor.init(hexString: "#4F6395")
+        
+        // To change colour of tappable items.
+        UINavigationBar.appearance().tintColor = .white
+        
+        // To control navigation bar's translucency.
+        UINavigationBar.appearance().isTranslucent = false
+        
         UINavigationBar.appearance().standardAppearance = navBarAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+    }
+    
+    func setUpTabBarAppearance() {
+        UITabBar.appearance().tintColor = UIColor.init(hexString: "#4F6395")
+        UITabBar.appearance().unselectedItemTintColor = UIColor.systemGray
     }
 }
 

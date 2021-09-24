@@ -8,14 +8,13 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var starship: StarshipsList?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "Detail"
+        
     }
     
-
-    
-
 }
