@@ -16,14 +16,13 @@ class ViewController: UIViewController {
     var starshipsList = [StarshipsList]()
     {
         didSet{
-            DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.showLoader(nil)
         self.navigationItem.title = "Home"
     }
     
@@ -34,15 +33,18 @@ class ViewController: UIViewController {
     
     func getStarships() {
         apiFeed.requestAPIInfo { result in
-          //  print("The response is :::::::\(result)")
-            switch result {
-            case.success(let data):
-                if let starshipmodel = data.results {
-                    self.starshipsList = starshipmodel
+            //  print("The response is :::::::\(result)")
+            DispatchQueue.main.async{
+                switch result {
+                case.success(let data):
+                    if let starshipmodel = data.results {
+                        self.starshipsList = starshipmodel
+                    }
+                // self.tableView.reloadData()
+                case .failure(let error):
+                    print(error)
                 }
-               // self.tableView.reloadData()
-            case .failure(let error):
-                print(error)
+                self.view.dismissLoader()
             }
         }
     }
@@ -61,8 +63,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
-    func tableView(_ tableView: UITableView,   indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = UIStoryboard(name: "Detail", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         detailVC.starship = self.starshipsList[indexPath.row]
         self.navigationController?.pushViewController(detailVC, animated: true)

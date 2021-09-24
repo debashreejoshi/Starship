@@ -9,39 +9,6 @@ import UIKit
 
 extension UIView {
     
-    /* for CACornerMask:
-     layerMaxXMaxYCorner – bottom right corner
-     layerMaxXMinYCorner – top right corner
-     layerMinXMaxYCorner – bottom left corner
-     layerMinXMinYCorner – top left corner
-     */
-    
-    func roundCorners(_ corners:UIRectCorner,_ cornerMask:CACornerMask, radius: CGFloat) {
-        if #available(iOS 11.0, *){
-            self.clipsToBounds = true
-            self.layer.cornerRadius = radius
-            self.layer.maskedCorners = cornerMask
-        } else {
-            let rectShape = CAShapeLayer()
-            rectShape.bounds = self.frame
-            rectShape.position = self.center
-            rectShape.path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius)).cgPath
-            self.layer.mask = rectShape
-        }
-    }
-    
-    func set(borderWidth width: CGFloat) {
-        self.layer.borderWidth = width
-    }
-    
-    func set(borderColor color: UIColor) {
-        self.layer.borderColor = color.cgColor
-    }
-    
-    func rounded() {
-        set(cornerRadius: self.frame.height / 2)
-    }
-    
     func set(cornerRadius radius: CGFloat) {
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
@@ -55,6 +22,23 @@ extension UIView {
         self.layer.masksToBounds = false
     }
     
+    func showLoader(_ color:UIColor?){
+        
+        let loaderView  = UIView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
+        loaderView.tag = -888754
+        loaderView.backgroundColor = color
+        let loader = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 60, height: 30))
+        loader.center = loaderView.center
+        loader.style = .large
+        loader.color = .darkGray
+        loader.startAnimating()
+        loaderView.addSubview(loader)
+        self.addSubview(loaderView)
+    }
+    
+    func dismissLoader(){
+        self.viewWithTag(-888754)?.removeFromSuperview()
+    }
 }
 
 
