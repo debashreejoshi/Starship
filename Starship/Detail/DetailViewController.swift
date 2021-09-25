@@ -25,6 +25,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lblManufacturedBy: UILabel!
     @IBOutlet weak var outerView: UIView!
     
+    @IBOutlet weak var btnFavourite: UIButton!
+    
     var starship: StarshipsList?
 
     override func viewDidLoad() {
@@ -33,6 +35,11 @@ class DetailViewController: UIViewController {
         self.setUpValues()
     }
     
+    @IBAction func btnFavouriteTapped(_ sender: Any) {
+        guard let starship = self.starship else { return }
+        FavouriteManager.shared.addFavourite(item: starship)
+        btnFavourite.setImage(UIImage(systemName: FavouriteManager.shared.isFavourite(item: starship) ? "heart.fill" : "heart"), for: .normal)
+    }
     
     func setUpValues() {
         self.lblName.text = starship?.name
@@ -48,6 +55,11 @@ class DetailViewController: UIViewController {
         self.lblMGLT.text = "MGLT: \(starship?.MGLT ?? "")"
         self.lblMaxAtmosphering.text = "Max Atmosphering Speed: \(starship?.max_atmosphering_speed ?? "")"
         self.lblManufacturedBy.text = "\(starship?.manufacturer ?? "")"
+        
+       
+        if let starship = self.starship {
+            btnFavourite.setImage(UIImage(systemName: FavouriteManager.shared.isFavourite(item: starship) ? "heart.fill" : "heart"), for: .normal)
+        }
     }
     
 }

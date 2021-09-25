@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol StarshipCellDelegate {
+    func didActionFavourite(cell: StarshipCell)
+}
+
 class StarshipCell: UITableViewCell {
     
     @IBOutlet weak var lblName: UILabel!
@@ -14,7 +18,9 @@ class StarshipCell: UITableViewCell {
     @IBOutlet weak var lblStarshipClass: UILabel!
     @IBOutlet weak var lblCargoCapacity: UILabel!
     @IBOutlet weak var outerView: UIView!
-    @IBOutlet weak var imageFavourite: UIImageView!
+    @IBOutlet weak var btnFavourite: UIButton!
+    
+    var delegate: StarshipCellDelegate?
     
     var starship: StarshipsList? {
         didSet {
@@ -33,5 +39,17 @@ class StarshipCell: UITableViewCell {
     func uiConfig() {
         self.outerView.set(cornerRadius: 5)
         self.outerView.setCardView()
+    }
+    
+    func setFavourite(state: Bool) {
+        if state {
+            btnFavourite.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+        } else {
+            btnFavourite.setImage(UIImage(systemName: "heart"), for: .normal)
+        }
+    }
+    
+    @IBAction func btnFavouriteTapped(_ sender: Any) {
+        self.delegate?.didActionFavourite(cell: self)
     }
 }

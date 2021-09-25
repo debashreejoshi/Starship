@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct StarshipsModel: Decodable {
+struct StarshipsModel: Codable {
     let count: Int?
     let next: String?
     let previous: String?
     let results: [StarshipsList]?
 }
 
-struct StarshipsList: Decodable {
+struct StarshipsList: Codable {
     let name: String?
     let model: String?
     let manufacturer: String?

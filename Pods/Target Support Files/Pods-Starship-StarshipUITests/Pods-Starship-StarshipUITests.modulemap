@@ -1,0 +1,6 @@
+framework module Pods_Starship_StarshipUITests {
+  umbrella header "Pods-Starship-StarshipUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
