@@ -153,13 +153,11 @@
 			children = (
 				C85129FB26FC7EFE009A9AEA /* Info.plist */,
 				C8FE420726FCBDE50019A7E3 /* Core */,
+				C8BE6F9126FF75D900F7BA27 /* Common */,
 				C8512A2126FCB5A6009A9AEA /* Extensions */,
 				C8FE420826FCBE290019A7E3 /* Home */,
 				C8FE420926FCBE4C0019A7E3 /* Detail */,
 				C8FE421026FD77AA0019A7E3 /* Favourites */,
-				C8FE420A26FCC6280019A7E3 /* StarshipsModel.swift */,
-				C8FE420C26FD52490019A7E3 /* APIFeed.swift */,
-				C8BE6F8F26FEC21D00F7BA27 /* FavouriteManager.swift */,
 			);
 			path = Starship;
 			sourceTree = "<group>";
@@ -189,6 +187,16 @@
 				C8FE421526FD97E10019A7E3 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8BE6F9126FF75D900F7BA27 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE6F8F26FEC21D00F7BA27 /* FavouriteManager.swift */,
+				C8FE420C26FD52490019A7E3 /* APIFeed.swift */,
+				C8FE420A26FCC6280019A7E3 /* StarshipsModel.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		C8FE420726FCBDE50019A7E3 /* Core */ = {

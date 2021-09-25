@@ -16,9 +16,7 @@ class ViewController: UIViewController {
     
     var datasource: [StarshipsList] = [StarshipsList]() {
         didSet{
-           // DispatchQueue.main.async{
-                self.tableView.reloadData()
-           // }
+            self.tableView.reloadData()
         }
     }
     
@@ -41,29 +39,12 @@ class ViewController: UIViewController {
     }
     
     func getStarships() {
-        //        apiFeed.requestAPIInfo { result in
-        //            DispatchQueue.main.async{
-        //                switch result {
-        //                case.success(let data):
-        //                    if let starshipmodel = data.results {
-        //                        self.datasource = starshipmodel
-        //                    }
-        //                case .failure(let error):
-        //                    print(error)
-        //                    self.displayAlert(errorMessage: error.localizedDescription)
-        //                }
-        //                self.view.dismissLoader()
-        //            }
-        //        }
-        
         self.apiFeed.requestAPIInfo { starshipsModel in
             self.datasource = starshipsModel.results ?? []
         } onError: { errorMessage in
             self.displayAlert(errorMessage: errorMessage)
         }
         self.view.dismissLoader()
-        
-        
     }
     
     func setBarBtn() {
@@ -142,7 +123,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ViewController: StarshipCellDelegate {
     func didActionFavourite(cell: StarshipCell) {
-        ///save to userdefaults
+        //save to userdefaults
         guard let index = tableView.indexPath(for: cell) else { return }
         let item = datasource[index.row]
         FavouriteManager.shared.addFavourite(item: item)
