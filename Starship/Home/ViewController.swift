@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     
     var datasource: [StarshipsList] = [StarshipsList]() {
         didSet{
-            self.tableView.reloadData()
+           // DispatchQueue.main.async{
+                self.tableView.reloadData()
+           // }
         }
     }
     
@@ -39,19 +41,29 @@ class ViewController: UIViewController {
     }
     
     func getStarships() {
-        apiFeed.requestAPIInfo { result in
-            DispatchQueue.main.async{
-                switch result {
-                case.success(let data):
-                    if let starshipmodel = data.results {
-                        self.datasource = starshipmodel
-                    }
-                case .failure(let error):
-                    print(error)
-                }
-                self.view.dismissLoader()
-            }
+        //        apiFeed.requestAPIInfo { result in
+        //            DispatchQueue.main.async{
+        //                switch result {
+        //                case.success(let data):
+        //                    if let starshipmodel = data.results {
+        //                        self.datasource = starshipmodel
+        //                    }
+        //                case .failure(let error):
+        //                    print(error)
+        //                    self.displayAlert(errorMessage: error.localizedDescription)
+        //                }
+        //                self.view.dismissLoader()
+        //            }
+        //        }
+        
+        self.apiFeed.requestAPIInfo { starshipsModel in
+            self.datasource = starshipsModel.results ?? []
+        } onError: { errorMessage in
+            self.displayAlert(errorMessage: errorMessage)
         }
+        self.view.dismissLoader()
+        
+        
     }
     
     func setBarBtn() {
@@ -92,6 +104,12 @@ class ViewController: UIViewController {
             }
             self.tableView.reloadData()
         }
+    }
+    
+    func displayAlert(errorMessage: String) {
+        let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

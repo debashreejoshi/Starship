@@ -11,36 +11,34 @@ struct APIFeed {
     
     var resourceURL: URL
     let urlString = "https://swapi.dev/api/starships/"
-   
+    
     init() {
         resourceURL = URL(string: urlString)!
     }
     
     //create method to get decode the json
     
-    func requestAPIInfo(completion: @escaping(Result<StarshipsModel, Error>) -> Void) {
+    func requestAPIInfo(onSuccess: @escaping (StarshipsModel) -> (), onError: @escaping (String) -> ()) {
         
         let dataTask = URLSession.shared.dataTask(with: resourceURL) { (data, response, error) in
-            
-            guard error == nil else {
-                print (error!.localizedDescription)
-                print ("error in data task")
-                return
+          
+            DispatchQueue.main.sync {
+                if let _error = error {
+                    onError(_error.localizedDescription)
+                    return
+                }
+                guard let data = data else {
+                    onError("Invalid data or response")
+                    return
+                }
+                do {
+                    let jsonData = try JSONDecoder().decode(StarshipsModel.self, from: data)
+                    onSuccess(jsonData)
+                    
+                } catch {
+                    onError(error.localizedDescription)
+                }
             }
-            
-            let decoder = JSONDecoder()
-            
-            do {
-                let jsonData = try decoder.decode(StarshipsModel.self, from: data!)
-                completion(.success(jsonData))
-            }
-            catch {
-                print ("an error in catch")
-                print (error)
-            }
-            
-            
-        
         }
         dataTask.resume()
     }
