@@ -30,7 +30,7 @@ extension UIView {
         let loader = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 60, height: 30))
         loader.center = loaderView.center
         loader.style = .large
-        loader.color = .darkGray
+        loader.color = UIColor.init(hexString: "#4F6395")
         loader.startAnimating()
         loaderView.addSubview(loader)
         self.addSubview(loaderView)

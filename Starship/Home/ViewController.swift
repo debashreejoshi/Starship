@@ -41,10 +41,11 @@ class ViewController: UIViewController {
     func getStarships() {
         self.apiFeed.requestAPIInfo { starshipsModel in
             self.datasource = starshipsModel.results ?? []
+            self.view.dismissLoader()
         } onError: { errorMessage in
             self.displayAlert(errorMessage: errorMessage)
+            self.view.dismissLoader()
         }
-        self.view.dismissLoader()
     }
     
     func setBarBtn() {
@@ -118,7 +119,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         detailVC.starship = self.datasource[indexPath.row]
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
-    
 }
 
 extension ViewController: StarshipCellDelegate {
